@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Management</h1>
+        </header>
+        <section class="input-area">
+            <input type="text" id="taskName" placeholder="Add a new task...">
+            <textarea id="taskDescription" placeholder="Description..."></textarea>
+            <button id="addTaskBtn"><i class="fas fa-plus"></i> Add</button>
+        </section>
+        <section class="filters">
+            <button id="showAllBtn" class="filter-btn active"><i class="fa-solid fa-earth-americas"></i> All</button>
+            <button id="showPendingBtn" class="filter-btn">Pending</button>
+            <button id="showCompletedBtn" class="filter-btn">Completed</button>
+            <div class="search-box">
+                <input type="text" id="searchTask" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </section>
+        <main id="taskList"></main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

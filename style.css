@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    /* Light teal gradient */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #393939;
+    /* Teal accent color */
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #b2ebf2;
+    /* Light teal border */
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #00acc1;
+    /* Darker teal on focus */
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #00acc1;
+    /* Teal button color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00838f;
+    /* Darker teal on hover */
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    background-color: #e0f7fa;
+    /* Light teal filter buttons */
+    color: #00838f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #00acc1;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b2ebf2;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.search-box i {
+    color: #00838f;
+    margin-right: 8px;
+}
+
+.task-item {
+    background-color: #f0f8ff;
+    /* Light blue task items */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    background-color: #e8f5e9;
+    /* Light green for completed tasks */
+}
+
+.task-details {
+    flex-grow: 1;
+}
+
+.task-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 18px;
+    color: #00838f;
+}
+
+.task-actions button:hover {
+    color: #00acc1;
+}
